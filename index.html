@@ -1,53 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
-    <link rel="stylesheet" href="form css.css">
+    <title>التخطيط العمراني</title>
+    <link rel="stylesheet" href="assignmentt.CSS">
+    <link rel="stylesheet" href="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.rtl.css">
+    <script defer src="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
 </head>
 <body>
-    <form action="omar.php" method="post">
-    <fieldset id="FORM">
-        <legend>Information</legend>
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name" required>
-
-            <label for="father-name">Father's Name:</label>
-            <input type="text" id="father-name" name="father-name" required> 
-
-            <label for="family-name">Family Name:</label>
-            <input type="text" id="family-name" name="family-name" required>
-<br>
+<h3 id="instantapp">instant app</h3>
+  <iframe src="https://www.arcgis.com/apps/instant/basic/index.html?appid=a2fc96ebbf294bc2b515863779a50ba5" width="400" height="600" frameborder="0" style="border:0" allowfullscreen>iFrames غير مدعومة في هذه الصفحة.</iframe>
+  <h3 id="website">web site</h3>
+  <br>
+  <h1 id="header">استخدام نظم المعلومات الجغرافية في التخطيط العمراني</h1>
 
 
-            <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="Male" checked>
-            <label for="male">Male</label>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         مقدمة عن نظم المعلومات الجغرافية
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>هي تقنية متقدمة تُستخدم لجمع، وتحليل، وإدارة، وعرض البيانات الجغرافية والمكانية. يعتمد GIS على الجمع بين البيانات الجغرافية (الموقع) والبيانات الوصفية (الخصائص)، مما يتيح فهم الأنماط الجغرافية واتخاذ قرارات دقيقة في مختلف المجالات
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            أهمية نظم المعلومات الجغرافية
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>        تساعد GIS في تحليل العلاقات المكانية بين الظواهر المختلفة، مما يسهم في تحسين التخطيط واتخاذ القرار في عدة مجالات، مثل:
+    
+            التخطيط العمراني: تحديد المناطق المناسبة للتوسع العمراني وتحليل البنية التحتية.
+            إدارة الموارد الطبيعية: مراقبة الغابات، وتحليل التغيرات البيئية، وإدارة مصادر المياه.
+            الزراعة: تحسين الإنتاج الزراعي عبر تحليل نوعية التربة والمناخ.
+            إدارة الكوارث: التنبؤ بالكوارث الطبيعية مثل الفيضانات والزلازل، واتخاذ تدابير استباقية.
+            المواصلات والخدمات: تحسين شبكات النقل وتخطيط مسارات الطرق
 
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            مكونات نظم المعلومات الجغرافية
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>يتكون GIS من عدة عناصر أساسية تشمل:
+    
+            البيانات المكانية (Spatial Data): تمثل المواقع الجغرافية على الخرائط.
+            البيانات الوصفية (Attribute Data): تصف خصائص المواقع الجغرافية مثل السكان، والارتفاعات، واستخدامات الأراضي.
+            الأجهزة (Hardware): تشمل الحواسيب وأجهزة تحديد المواقع (GPS).
+            البرمجيات (Software): مثل ArcGIS, QGIS التي تستخدم لتحليل البيانات الجغرافية.
+            المستخدمون (Users): المختصون الذين يقومون بجمع وتحليل البيانات لاتخاذ القرارات
 
-            <select id="month" name="month">
-                <option>Month</option>
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
-<br>
-            <input type="submit" id="sub">
+        </div>
+      </div>
+    </div>
+  </div>
 
-        </fieldset>
-    </form>
+
+  <br>
+
+  <button type="button" class="btn btn-dark" id="aa">
+
+    <a href="https://gopp.gggid.com/" target="_blank">الهيئة العامة للتخطيط العمراني</a>
+
+  </button>
+
+
+    <br>
+    <br>
+    <img src="photo.png" width="300">
+    <br>
+    <video src="video.mp4" width="300" controls></video>
+
+    <ul type="square">انواع التخطيط العمراني
+        <li>التخطيط الاستراتيجي</li>
+        <li>التخطيط الهيكلي</li>
+        <li>التخطيط التفصيلي</li>
+        <li>التخطيط البيئي</li>
+        <li>التخطيط الاقتصادي</li>
+        <li>التخطيط الاجتماعي</li>
+        <li>التخطيط المروري والنقل</li>
+    </ul>
+
+    <div id="GIS">
+        <h1>GIS</h1>
+        <div class="container">
+            <div class="sub">
+                <h3>التخطيط العمراني</h3>
+                <img src="التخطيط الحضري.jpg" width="33%">
+                <p>التخطيط العمراني هو عملية تنظيم استخدام الأراضي لتحقيق التنمية المستدامة.</p>
+            </div>
+    
+            <div class="sub">
+                <h3>نظم المعلومات الجغرافية (GIS)</h3>
+                <img src="GIS-Meaning.jpg" width="33%">
+                <p>GIS يساعد في تحليل البيانات المكانية لدعم اتخاذ القرارات في التخطيط العمراني.</p>
+            </div>
+    
+            <div class="sub">
+                <h3>الاستشعار عن بعد</h3>
+                <img src="optical.gif" width="33%">
+                <p>الاستشعار عن بعد يُستخدم في مراقبة التغيرات العمرانية وتحليل صور الأقمار الصناعية.</p>
+            </div>
+        </div>
+    </div>
+
+ 
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="n16241997021341525644.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">حماية البيئة باستخدام GIS</h5>
+              <p class="card-text">تُستخدم نظم المعلومات الجغرافية في مراقبة التلوث، وتتبع التغيرات البيئية، مثل إزالة الغابات وتغيرات السواحل.</p>
+              <a href="#" class="btn btn-primary">استكشاف المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">الزراعة الدقيقة عبر الاستشعار عن بعد</h5>
+              <p class="card-text">تُساعد صور الأقمار الصناعية في تحديد صحة المحاصيل، ورصد الجفاف، وتحسين إنتاجية الأراضي الزراعية.</p>
+              <a href="#" class="btn btn-primary">تعرف على التطبيقات</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="17071268040.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">المدن الذكية والتخطيط العمراني</h5>
+              <p class="card-text">يدعم التخطيط العمراني الذكي إنشاء مدن أكثر كفاءة واستدامة من خلال تحليل البيانات الحضرية وتوقع النمو السكاني.</p>
+              <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
 
 </body>
 </html>
